@@ -61,7 +61,7 @@ end
 
 -- 4) Assets (sons, images, skybox) : telecharges si absents
 local Assets = {
-    ["assets/images/paw.png"]           = "assets/images/paw.png",
+    ["assets/images/logo.png"]          = "assets/images/logo.png",
     ["assets/images/welcome.png"]       = "assets/images/welcome.png",
     ["assets/txts/welcome.txt"]         = "assets/txts/welcome.txt",
     ["assets/sounds/12.mp3"]            = "assets/sounds/12.mp3",
