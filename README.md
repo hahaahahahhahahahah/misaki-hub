@@ -146,6 +146,7 @@ full wall check (respects server-side removed doors), death check, forcefield ch
 - **centralized render loop** — a single `RenderStepped` connection with a cached callback system instead of individual connections per feature
 - **table-driven loader** — assets and folders declared as tables, downloaded with error handling and failure notifications
 - **resilient loader** — FNV-1a integrity verification on library and game, graceful failure handling (warnings + notifications instead of silent aborts)
+- **automatic updates** — the loader checks `VERSION.txt` on every run and self-updates when a new version is pushed (no need to re-paste the loadstring)
 - **event-driven hooks** — all gun modifications apply and revert through hook restoration, no leftovers
 
 <br/>
