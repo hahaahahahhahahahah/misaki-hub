@@ -15,7 +15,7 @@
 [![Prison Life](https://img.shields.io/badge/Prison%20Life-Supported-a78bfa?style=for-the-badge)](#)
 [![OP Ninja](https://img.shields.io/badge/OP%20Ninja-Supported-a78bfa?style=for-the-badge)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-8b5cf6?style=for-the-badge)](#)
-[![Version](https://img.shields.io/badge/version-6.0.0-a78bfa?style=for-the-badge)](#)
+[![Version](https://img.shields.io/badge/version-7.0.0-a78bfa?style=for-the-badge)](#)
 
 <br/>
 
