@@ -1,0 +1,5 @@
+# Lua files are byte-sensitive (the loader verifies FNV-1a hashes of library
+# and game scripts). CRLF conversion would silently break the integrity check,
+# so force LF everywhere.
+*.lua text eol=lf
+VERSION.txt text eol=lf

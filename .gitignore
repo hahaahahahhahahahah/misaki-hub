@@ -3,3 +3,6 @@
 
 # Local deobfuscated / transpiled working copies
 _*.lua
+
+# Local test runners (not part of the hub)
+local_*.lua
