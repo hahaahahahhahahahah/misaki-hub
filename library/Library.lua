@@ -190,18 +190,18 @@ do
 	}
 	local an = {
 		["\80\114\101\115\101\116"] = {
-			["\66\97\99\107\103\114\111\117\110\100"] = l((560 - 546), bit32.bxor(bit32.bxor(17, 1515870810), 1515870810), (-567 + 582)),
-			["\66\111\114\100\101\114"] = l((-892 + 904), bit32.bxor(bit32.bxor(12, 1515870810), 1515870810), bit32.bxor(bit32.bxor(12, 1515870810), 1515870810)),
-			["\73\110\108\105\110\101"] = l(bit32.bxor(bit32.bxor(20, 1515870810), 1515870810), bit32.bxor(bit32.bxor(24, 1515870810), 1515870810), bit32.bxor(bit32.bxor(21, 1515870810), 1515870810)),
-			["\72\111\118\101\114\101\100\32\69\108\101\109\101\110\116"] = l((279 - 242), (130 - 88), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
-			["\80\97\103\101\32\66\97\99\107\103\114\111\117\110\100"] = l(bit32.bxor(bit32.bxor(25, 1515870810), 1515870810), (-327 + 357), bit32.bxor(bit32.bxor(26, 1515870810), 1515870810)),
-			["\79\117\116\108\105\110\101"] = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (-81 + 130), (-304 + 349)),
-			["\69\108\101\109\101\110\116"] = l((369 - 339), (514 - 478), bit32.bxor(bit32.bxor(31, 1515870810), 1515870810)),
-			["\71\114\97\100\105\101\110\116"] = l(bit32.bxor(bit32.bxor(208, 1515870810), 1515870810), bit32.bxor(bit32.bxor(208, 1515870810), 1515870810), bit32.bxor(bit32.bxor(208, 1515870810), 1515870810)),
-			["\84\101\120\116"] = l((-167 + 402), bit32.bxor(bit32.bxor(235, 1515870810), 1515870810), (624 - 389)),
+			["\66\97\99\107\103\114\111\117\110\100"] = l(13, 13, 18),
+			["\66\111\114\100\101\114"] = l(30, 26, 44),
+			["\73\110\108\105\110\101"] = l(23, 21, 34),
+			["\72\111\118\101\114\101\100\32\69\108\101\109\101\110\116"] = l(46, 39, 68),
+			["\80\97\103\101\32\66\97\99\107\103\114\111\117\110\100"] = l(17, 16, 25),
+			["\79\117\116\108\105\110\101"] = l(56, 49, 80),
+			["\69\108\101\109\101\110\116"] = l(33, 29, 48),
+			["\71\114\97\100\105\101\110\116"] = l(208, 208, 208),
+			["\84\101\120\116"] = l(235, 235, 235),
 			["\84\101\120\116\32\83\116\114\111\107\101"] = l(0, 0, 0),
-			["\80\108\97\99\101\104\111\108\100\101\114\32\84\101\120\116"] = l((-305 + 490), (16 + 169), bit32.bxor(bit32.bxor(185, 1515870810), 1515870810)),
-			["\65\99\99\101\110\116"] = l((356 - 226), bit32.bxor(bit32.bxor(174, 1515870810), 1515870810), (-726 + 869)),
+			["\80\108\97\99\101\104\111\108\100\101\114\32\84\101\120\116"] = l(160, 158, 178),
+			["\65\99\99\101\110\116"] = l(167, 139, 250),
 		},
 	}
 	a.Theme = ad(an["\80\114\101\115\101\116"])
@@ -967,10 +967,10 @@ do
 					Name = "\0",
 					AnchorPoint = gf.AnchorPoint,
 					Position = gf.Position,
-					BorderColor3 = l(bit32.bxor(bit32.bxor(12, 1515870810), 1515870810), (159 - 147), (1008 - 996)),
+					BorderColor3 = l(30, 26, 44),
 					Size = gf.Size,
 					BorderSizePixel = (-344 + 346),
-					BackgroundColor3 = l(bit32.bxor(bit32.bxor(14, 1515870810), 1515870810), bit32.bxor(bit32.bxor(17, 1515870810), 1515870810), (396 - 381)),
+					BackgroundColor3 = l(13, 13, 18),
 				})
 				gg["\87\105\110\100\111\119"]:AddToTheme({
 					BackgroundColor3 = "\66\97\99\107\103\114\111\117\110\100",
@@ -1120,7 +1120,7 @@ do
 						Parent = gl["\80\97\103\101"].Instance,
 						Name = "\0",
 						Size = s(0, 0, 0, (-549 + 584)),
-						BorderColor3 = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), bit32.bxor(bit32.bxor(49, 1515870810), 1515870810), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+						BorderColor3 = l(56, 49, 80),
 						BorderSizePixel = bit32.bxor(bit32.bxor(2, 1515870810), 1515870810),
 						AutomaticSize = Enum.AutomaticSize.X,
 						BackgroundColor3 = l(bit32.bxor(bit32.bxor(20, 1515870810), 1515870810), (222 - 198), bit32.bxor(bit32.bxor(21, 1515870810), 1515870810)),
@@ -1970,7 +1970,7 @@ do
 				bl:Create("\85\73\83\116\114\111\107\101", {
 					Parent = ht["\82\101\97\108\83\108\105\100\101\114"].Instance,
 					Name = "\0",
-					Color = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), bit32.bxor(bit32.bxor(49, 1515870810), 1515870810), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+					Color = l(56, 49, 80),
 					LineJoinMode = Enum.LineJoinMode.Miter,
 					ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
 				}):AddToTheme({
@@ -2008,7 +2008,7 @@ do
 					Name = "\0",
 					AnchorPoint = u(1, ((0.5 * 4) / 4)),
 					Position = s(1, 0, ((0.5 * 10) / 10), 0),
-					BorderColor3 = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), bit32.bxor(bit32.bxor(49, 1515870810), 1515870810), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+					BorderColor3 = l(56, 49, 80),
 					Size = s(0, (-617 + 620), 1, (-30 + 33)),
 					BorderSizePixel = bit32.bxor(bit32.bxor(2, 1515870810), 1515870810),
 					BackgroundColor3 = l((81 - 67), bit32.bxor(bit32.bxor(17, 1515870810), 1515870810), bit32.bxor(bit32.bxor(15, 1515870810), 1515870810)),
@@ -2252,7 +2252,7 @@ do
 				bl:Create("\85\73\83\116\114\111\107\101", {
 					Parent = ic["\82\101\97\108\68\114\111\112\100\111\119\110"].Instance,
 					Name = "\0",
-					Color = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), bit32.bxor(bit32.bxor(49, 1515870810), 1515870810), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+					Color = l(56, 49, 80),
 					LineJoinMode = Enum.LineJoinMode.Miter,
 					ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
 				}):AddToTheme({
@@ -2314,7 +2314,7 @@ do
 				bl:Create("\85\73\83\116\114\111\107\101", {
 					Parent = ic["\79\112\116\105\111\110\72\111\108\100\101\114"].Instance,
 					Name = "\0",
-					Color = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (418 - 369), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+					Color = l(56, 49, 80),
 					LineJoinMode = Enum.LineJoinMode.Miter,
 					ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
 				}):AddToTheme({
@@ -2664,7 +2664,7 @@ do
 				Name = "\0",
 				FontFace = a.Font,
 				TextColor3 = l(0, 0, 0),
-				BorderColor3 = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (858 - 809), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+				BorderColor3 = l(56, 49, 80),
 				Text = "",
 				AutoButtonColor = (1 == 0),
 				Position = s(0, bit32.bxor(bit32.bxor(8, 1515870810), 1515870810), 0, bit32.bxor(bit32.bxor(8, 1515870810), 1515870810)),
@@ -2731,7 +2731,7 @@ do
 				Parent = ja["\67\111\108\111\114\112\105\99\107\101\114\87\105\110\100\111\119"].Instance,
 				Name = "\0",
 				Active = (1 == 1),
-				BorderColor3 = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (413 - 364), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+				BorderColor3 = l(56, 49, 80),
 				AnchorPoint = u(1, 0),
 				Position = s(1, -bit32.bxor(bit32.bxor(8, 1515870810), 1515870810), 0, (-441 + 449)),
 				Size = s(0, bit32.bxor(bit32.bxor(15, 1515870810), 1515870810), 1, -bit32.bxor(bit32.bxor(16, 1515870810), 1515870810)),
@@ -2895,7 +2895,7 @@ do
 				bl:Create("\85\73\83\116\114\111\107\101", {
 					Parent = je["\67\111\108\111\114\112\105\99\107\101\114\66\117\116\116\111\110"].Instance,
 					Name = "\0",
-					Color = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (-887 + 936), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+					Color = l(56, 49, 80),
 					LineJoinMode = Enum.LineJoinMode.Miter,
 					ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
 				}):AddToTheme({
@@ -3017,7 +3017,7 @@ do
 					Name = "\0",
 					FontFace = a.Font,
 					TextColor3 = l(0, 0, 0),
-					BorderColor3 = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (-13 + 62), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+					BorderColor3 = l(56, 49, 80),
 					Text = "",
 					AutoButtonColor = (1 == 0),
 					Position = s(0, (-25 + 33), 0, bit32.bxor(bit32.bxor(8, 1515870810), 1515870810)),
@@ -3084,7 +3084,7 @@ do
 					Parent = jg["\80\97\103\101\67\111\110\116\101\110\116"].Instance,
 					Name = "\0",
 					Active = (not false),
-					BorderColor3 = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), bit32.bxor(bit32.bxor(49, 1515870810), 1515870810), (686 - 641)),
+					BorderColor3 = l(56, 49, 80),
 					AnchorPoint = u(1, 0),
 					Position = s(1, -bit32.bxor(bit32.bxor(8, 1515870810), 1515870810), 0, (535 - 527)),
 					Size = s(0, (537 - 517), 1, -bit32.bxor(bit32.bxor(16, 1515870810), 1515870810)),
@@ -3150,7 +3150,7 @@ do
 					Name = "\0",
 					FontFace = a.Font,
 					TextColor3 = l(0, 0, 0),
-					BorderColor3 = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (-372 + 421), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+					BorderColor3 = l(56, 49, 80),
 					Text = "",
 					AutoButtonColor = (1 == 0),
 					AnchorPoint = u(0, 1),
@@ -3774,10 +3774,10 @@ do
 					Parent = a.UnusedHolder.Instance,
 					Name = "\0",
 					Position = s(((0.007692307699471712 * 2) / 2), 0, ((0.35323384404182434 * 10) / 10), 0),
-					BorderColor3 = l(bit32.bxor(bit32.bxor(12, 1515870810), 1515870810), bit32.bxor(bit32.bxor(12, 1515870810), 1515870810), bit32.bxor(bit32.bxor(12, 1515870810), 1515870810)),
+					BorderColor3 = l(30, 26, 44),
 					Size = s(0, bit32.bxor(bit32.bxor(70, 1515870810), 1515870810), 0, (-628 + 718)),
 					BorderSizePixel = bit32.bxor(bit32.bxor(2, 1515870810), 1515870810),
-					BackgroundColor3 = l((-985 + 999), bit32.bxor(bit32.bxor(17, 1515870810), 1515870810), bit32.bxor(bit32.bxor(15, 1515870810), 1515870810)),
+					BackgroundColor3 = l(13, 13, 18),
 				})
 				lx["\75\101\121\98\105\110\100\87\105\110\100\111\119"]:AddToTheme({
 					BackgroundColor3 = "\66\97\99\107\103\114\111\117\110\100",
@@ -4182,7 +4182,7 @@ do
 				bl:Create("\85\73\83\116\114\111\107\101", {
 					Parent = mt["\66\97\99\107\103\114\111\117\110\100"].Instance,
 					Name = "\0",
-					Color = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), bit32.bxor(bit32.bxor(49, 1515870810), 1515870810), (469 - 424)),
+					Color = l(56, 49, 80),
 					LineJoinMode = Enum.LineJoinMode.Miter,
 					ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
 				}):AddToTheme({
@@ -4294,7 +4294,7 @@ do
 					Name = "\0",
 					ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
 					Transparency = ((0.4000000059604645 * 5) / 5),
-					Color = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (980 - 931), (318 - 273)),
+					Color = l(56, 49, 80),
 					LineJoinMode = Enum.LineJoinMode.Miter,
 				}):AddToTheme({
 					Color = "\79\117\116\108\105\110\101",
@@ -4363,7 +4363,7 @@ do
 				bl:Create("\85\73\83\116\114\111\107\101", {
 					Parent = mx["\82\101\97\108\76\105\115\116\98\111\120"].Instance,
 					Name = "\0",
-					Color = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (981 - 932), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+					Color = l(56, 49, 80),
 					LineJoinMode = Enum.LineJoinMode.Miter,
 					ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
 				}):AddToTheme({
@@ -4634,7 +4634,7 @@ do
 			bl:Create("\85\73\83\116\114\111\107\101", {
 				Parent = ni["\87\97\116\101\114\109\97\114\107"].Instance,
 				Name = "\0",
-				Color = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (808 - 759), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+				Color = l(56, 49, 80),
 				LineJoinMode = Enum.LineJoinMode.Miter,
 				ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
 			}):AddToTheme({
@@ -5000,10 +5000,9 @@ do
 				Name = "\0",
 				AnchorPoint = u(((0.5 * 5) / 5), ((0.5 * 4) / 4)),
 				Position = s(((0.5 * 5) / 5), 0, ((0.5 * 5) / 5), 0),
-				Size = s(0, bit32.bxor(bit32.bxor(280, 1515870810), 1515870810), 0, bit32.bxor(bit32.bxor(190, 1515870810), 1515870810)),
-				BorderColor3 = l(bit32.bxor(bit32.bxor(12, 1515870810), 1515870810), (565 - 553), (-972 + 984)),
-				BorderSizePixel = bit32.bxor(bit32.bxor(2, 1515870810), 1515870810),
-				BackgroundColor3 = l((-889 + 903), bit32.bxor(bit32.bxor(17, 1515870810), 1515870810), bit32.bxor(bit32.bxor(15, 1515870810), 1515870810)),
+				Size = s(0, bit32.bxor(bit32.bxor(280, 1515870810), 1515870810), 0, bit32.bxor(bit32.bxor(190, 1515870810), 1515870810)),					BorderColor3 = l(30, 26, 44),
+					BorderSizePixel = bit32.bxor(bit32.bxor(2, 1515870810), 1515870810),
+					BackgroundColor3 = l(13, 13, 18),
 				ZIndex = bit32.bxor(bit32.bxor(9999, 1515870810), 1515870810),
 			})
 			ny["\67\111\110\116\97\105\110\101\114"]:AddToTheme({
@@ -5013,7 +5012,7 @@ do
 			ny["\83\116\114\111\107\101"] = bl:Create("\85\73\83\116\114\111\107\101", {
 				Parent = ny["\67\111\110\116\97\105\110\101\114"].Instance,
 				Name = "\0",
-				Color = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (1021 - 972), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+				Color = l(56, 49, 80),
 				LineJoinMode = Enum.LineJoinMode.Miter,
 				ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
 			})
@@ -5065,7 +5064,7 @@ do
 				AnchorPoint = u(((0.5 * 4) / 4), 0),
 				Position = s(((0.5 * 2) / 2), 0, 0, (-729 + 854)),
 				Size = s(0, (-486 + 706), 0, bit32.bxor(bit32.bxor(4, 1515870810), 1515870810)),
-				BorderColor3 = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), (-586 + 635), bit32.bxor(bit32.bxor(45, 1515870810), 1515870810)),
+				BorderColor3 = l(56, 49, 80),
 				BorderSizePixel = 1,
 				BackgroundColor3 = l(bit32.bxor(bit32.bxor(20, 1515870810), 1515870810), bit32.bxor(bit32.bxor(24, 1515870810), 1515870810), bit32.bxor(bit32.bxor(21, 1515870810), 1515870810)),
 				ZIndex = (9583 + 417),
@@ -5929,7 +5928,7 @@ do
 				Parent = Section.Page.ColumnsData[Section.Side].Instance,
 				Name = "\0",
 				Size = s(1, 0, 0, bit32.bxor(bit32.bxor(25, 1515870810), 1515870810)),
-				BorderColor3 = l(bit32.bxor(bit32.bxor(42, 1515870810), 1515870810), bit32.bxor(bit32.bxor(49, 1515870810), 1515870810), (-406 + 451)),
+				BorderColor3 = l(56, 49, 80),
 				BorderSizePixel = bit32.bxor(bit32.bxor(2, 1515870810), 1515870810),
 				AutomaticSize = Enum.AutomaticSize.Y,
 				BackgroundColor3 = l(bit32.bxor(bit32.bxor(20, 1515870810), 1515870810), bit32.bxor(bit32.bxor(24, 1515870810), 1515870810), bit32.bxor(bit32.bxor(21, 1515870810), 1515870810)),

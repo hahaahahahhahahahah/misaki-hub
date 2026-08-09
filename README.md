@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌿 misaki
+# misaki
 
 **a script hub for Prison Life** — clean, fast, event-driven.
 
@@ -12,9 +12,9 @@
 
 [![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)](#)
 [![Roblox](https://img.shields.io/badge/Roblox-000000?style=for-the-badge&logo=roblox&logoColor=white)](#)
-[![Prison Life](https://img.shields.io/badge/Prison%20Life-Supported-82a68f?style=for-the-badge)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-4ea94b?style=for-the-badge)](#)
-[![Version](https://img.shields.io/badge/version-2.0.0-82a68f?style=for-the-badge)](#)
+[![Prison Life](https://img.shields.io/badge/Prison%20Life-Supported-a78bfa?style=for-the-badge)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-8b5cf6?style=for-the-badge)](#)
+[![Version](https://img.shields.io/badge/version-2.0.0-a78bfa?style=for-the-badge)](#)
 
 <br/>
 
@@ -30,7 +30,7 @@ loadstring(game:HttpGet("https://github.com/hahaahahahhahahahah/misaki-hub/raw/m
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Quick Start](#quick-start)
 - [Supported Games](#supported-games)
@@ -48,7 +48,7 @@ loadstring(game:HttpGet("https://github.com/hahaahahahhahahahah/misaki-hub/raw/m
 
 <br/>
 
-## ⚡ Quick Start
+## Quick Start
 
 1. Copy the loadstring above.
 2. Paste it into your executor and run it.
@@ -58,7 +58,7 @@ The menu keybind is **Right Control** by default.
 
 <br/>
 
-## 🎮 Supported Games
+## Supported Games
 
 | Game | Place IDs | Status |
 | --- | --- | --- |
@@ -66,7 +66,7 @@ The menu keybind is **Right Control** by default.
 
 <br/>
 
-## ✨ Features
+## Features
 
 ### Combat
 
@@ -94,7 +94,7 @@ The menu keybind is **Right Control** by default.
 | infinite jump | jump mid-air without limits |
 | name esp | floating names with team color, inmate status prefixes, forcefield prefix, outline |
 | box esp | 2d bounding boxes with team color, outline |
-| esp filters | team & inmate type filters, player whitelist (hide or highlight green) |
+| esp filters | team & inmate type filters, player whitelist (hide or highlight) |
 
 > both esp types instantly hide on player death.
 
@@ -145,7 +145,7 @@ full wall check (respects server-side removed doors), death check, forcefield ch
 
 <br/>
 
-## ⚙️ System
+## System
 
 - **centralized render loop** — a single `RenderStepped` connection with a cached callback system instead of individual connections per feature
 - **table-driven loader** — assets and folders declared as tables, downloaded with error handling and failure notifications
@@ -154,7 +154,7 @@ full wall check (respects server-side removed doors), death check, forcefield ch
 
 <br/>
 
-## 💻 Compatibility
+## Compatibility
 
 | Executor | Score | Price |
 | --- | --- | --- |
@@ -165,15 +165,15 @@ full wall check (respects server-side removed doors), death check, forcefield ch
 
 <br/>
 
-## 📜 Disclaimer
+## Disclaimer
 
 This project is for **educational purposes only**. Use at your own risk. We are not affiliated with Roblox Corporation or Prison Life. Exploiting Roblox games may violate the Roblox Terms of Service — your account, your responsibility.
 
 <br/>
 
-## 👤 Credits
+## Credits
 
-built by **kamil** — 🌿
+built by **kamil** — misaki
 
 <br/>
 
