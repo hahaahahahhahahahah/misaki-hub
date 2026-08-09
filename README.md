@@ -22,8 +22,6 @@
 loadstring(game:HttpGet("https://github.com/hahaahahahhahahahah/misaki-hub/raw/main/loader.lua", true))()
 ```
 
-**compatible with most modern executors**
-
 <br/>
 
 </div>
@@ -42,9 +40,7 @@ loadstring(game:HttpGet("https://github.com/hahaahahahhahahahah/misaki-hub/raw/m
   - [Auras & Blatant](#auras--blatant)
   - [Utility](#utility)
 - [System](#system)
-- [Compatibility](#compatibility)
 - [Disclaimer](#disclaimer)
-- [Credits](#credits)
 
 <br/>
 
@@ -60,9 +56,9 @@ The menu keybind is **Right Control** by default.
 
 ## Supported Games
 
-| Game | Place IDs | Status |
-| --- | --- | --- |
-| Prison Life | `155615604` / `135564683255158` | ✅ active |
+| Game | Place IDs |
+| --- | --- |
+| Prison Life | `155615604` / `135564683255158` |
 
 <br/>
 
@@ -154,26 +150,9 @@ full wall check (respects server-side removed doors), death check, forcefield ch
 
 <br/>
 
-## Compatibility
-
-| Executor | Score | Price |
-| --- | --- | --- |
-| volt | 98% | 6$/wk |
-| seliware | 100% | 10$/mo |
-| potASSium | 100% | 20$/lf |
-| madium | null | free |
-
-<br/>
-
 ## Disclaimer
 
 This project is for **educational purposes only**. Use at your own risk. We are not affiliated with Roblox Corporation or Prison Life. Exploiting Roblox games may violate the Roblox Terms of Service — your account, your responsibility.
-
-<br/>
-
-## Credits
-
-built by **kamil** — misaki
 
 <br/>
 
