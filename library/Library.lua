@@ -682,7 +682,7 @@ do
 	end
 	local dr = {}
 	do
-		function dr:New(self, Name, ds, dt, du)
+		function dr:New(Name, ds, dt, du)
 			if 5 ~= 5 then
 				local _dc17744 = 816
 			end
@@ -711,7 +711,7 @@ do
 			writefile(a.Folders.Assets .. "/" .. Name .. "\46\106\115\111\110", e:JSONEncode(dv))
 			return Font.new(getcustomasset(a.Folders.Assets .. "/" .. Name .. "\46\106\115\111\110"))
 		end
-		function dr:Get(self, Name)
+		function dr:Get(Name)
 			if isfile(a.Folders.Assets .. "/" .. Name .. "\46\106\115\111\110") then
 				return Font.new(getcustomasset(a.Folders.Assets .. "/" .. Name .. "\46\106\115\111\110"))
 			end
@@ -1008,7 +1008,7 @@ do
 				})
 				gi["\85\73\83\116\114\111\107\101"] = gi["\76\97\98\101\108"]:TextBorder()
 			end
-			function Label:SetProperty(self, gj, Value)
+			function Label:SetProperty(gj, Value)
 				gi["\76\97\98\101\108"].Instance[gj] = Value
 			end
 			return Label, gi
@@ -1198,7 +1198,7 @@ do
 				Page.Items = gl
 			end
 			local go = (1 == 0)
-			function Page:Turn(self, gp)
+			function Page:Turn(gp)
 				if go then
 					return
 				end
@@ -1451,7 +1451,7 @@ do
 			end
 			local gz = (not true)
 			a.SearchItems[gv] = {}
-			function gv:Turn(self, ha)
+			function gv:Turn(ha)
 				if gz then
 					return
 				end
@@ -1671,14 +1671,14 @@ do
 					})
 				end
 			end
-			function Toggle:Get(self)
+			function Toggle:Get()
 				return Toggle.Value
 			end
-			function Toggle:SetText(self, Text)
+			function Toggle:SetText(Text)
 				Text = tostring(Text)
 				hg["\84\101\120\116"].Instance.Text = Text
 			end
-			function Toggle:Set(self, Value)
+			function Toggle:Set(Value)
 				Toggle.Value = Value
 				a.Flags[Toggle.Flag] = Value
 				if Toggle.Value then
@@ -1712,7 +1712,7 @@ do
 					a:SafeCall(hf.Callback, Toggle.Value)
 				end
 			end
-			function Toggle:SetVisibility(self, hh)
+			function Toggle:SetVisibility(hh)
 				hg["\84\111\103\103\108\101"].Instance.Visible = hh
 			end
 			local hi = a.SearchItems[hf.Page]
@@ -1779,7 +1779,7 @@ do
 					SortOrder = Enum.SortOrder.LayoutOrder,
 				})
 			end
-			function Button:Add(self, Name, hm)
+			function Button:Add(Name, hm)
 				local NewButton = {}
 				local hn = {}
 				do
@@ -1843,7 +1843,7 @@ do
 					})
 					hn["\84\101\120\116"]:TextBorder()
 				end
-				function NewButton:Press(self)
+				function NewButton:Press()
 					hn["\78\101\119\66\117\116\116\111\110"]:ChangeItemTheme({
 						BackgroundColor3 = "\65\99\99\101\110\116",
 						BorderColor3 = "\66\111\114\100\101\114",
@@ -1861,7 +1861,7 @@ do
 						BackgroundColor3 = a.Theme.Element,
 					})
 				end
-				function NewButton:SetVisibility(self, ho)
+				function NewButton:SetVisibility(ho)
 					hn["\78\101\119\66\117\116\116\111\110"].Instance.Visible = ho
 				end
 				local hp = a.SearchItems[hk.Page]
@@ -1895,7 +1895,7 @@ do
 				end)
 				return NewButton
 			end
-			function Button:SetVisibility(self, hr)
+			function Button:SetVisibility(hr)
 				hl["\66\117\116\116\111\110"].Instance.Visible = hr
 			end
 			return Button, hl
@@ -2047,13 +2047,13 @@ do
 				})
 				ht["\86\97\108\117\101"]:TextBorder()
 			end
-			function Slider:Get(self)
+			function Slider:Get()
 				return Slider.Value
 			end
-			function Slider:SetVisibility(self, hu)
+			function Slider:SetVisibility(hu)
 				ht["\83\108\105\100\101\114"].Instance.Visible = hu
 			end
-			function Slider:Set(self, Value)
+			function Slider:Set(Value)
 				Slider.Value = a:Round(v(Value, hs.Min, hs.Max), hs.Decimals)
 				a.Flags[Slider.Flag] = Slider.Value
 				ht["\65\99\99\101\110\116"]:Tween(TweenInfo.new(a.Tween.Time, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {
@@ -2172,11 +2172,11 @@ do
 					SortOrder = Enum.SortOrder.LayoutOrder,
 				})
 			end
-			function Label:SetText(self, Text)
+			function Label:SetText(Text)
 				Text = tostring(Text)
 				hz["\84\101\120\116"].Instance.Text = Text
 			end
-			function Label:SetVisibility(self, ia)
+			function Label:SetVisibility(ia)
 				hz["\76\97\98\101\108"].Instance.Visible = ia
 			end
 			return Label, hz
@@ -2335,12 +2335,12 @@ do
 					SortOrder = Enum.SortOrder.LayoutOrder,
 				})
 			end
-			function Dropdown:Get(self)
+			function Dropdown:Get()
 				return Dropdown.Value
 			end
 			local id = (1 == 0)
 			local ie
-			function Dropdown:SetOpen(self, ig)
+			function Dropdown:SetOpen(ig)
 				if id then
 					return
 				end
@@ -2401,10 +2401,10 @@ do
 					ic["\79\112\116\105\111\110\72\111\108\100\101\114"].Instance.Parent = not Dropdown.IsOpen and a.UnusedHolder.Instance or a.Holder.Instance
 				end)
 			end
-			function Dropdown:SetVisibility(self, il)
+			function Dropdown:SetVisibility(il)
 				ic["\68\114\111\112\100\111\119\110"].Instance.Visible = il
 			end
-			function Dropdown:Set(self, im)
+			function Dropdown:Set(im)
 				if ib.Multi then
 					if type(im) ~= "\116\97\98\108\101" then
 						return
@@ -2442,7 +2442,7 @@ do
 					a:SafeCall(ib.Callback, Dropdown.Value)
 				end
 			end
-			function Dropdown:Add(self, iq)
+			function Dropdown:Add(iq)
 				local ir = bl:Create("\84\101\120\116\66\117\116\116\111\110", {
 					Parent = ic["\79\112\116\105\111\110\72\111\108\100\101\114"].Instance,
 					Name = "\0",
@@ -2467,7 +2467,7 @@ do
 					Name = iq,
 					Selected = (1 == 0),
 				}
-				function is:Toggle(self, Status)
+				function is:Toggle(Status)
 					if Status == "\65\99\116\105\118\101" then
 						is.Button:ChangeItemTheme({
 							TextColor3 = "\65\99\99\101\110\116",
@@ -2484,7 +2484,7 @@ do
 						})
 					end
 				end
-				function is:Set(self)
+				function is:Set()
 					is.Selected = not is.Selected
 					if ib.Multi then
 						local it = aa(Dropdown.Value, is.Name)
@@ -2528,14 +2528,14 @@ do
 				Dropdown.Options[is.Name] = is
 				return is
 			end
-			function Dropdown:Remove(self, iv)
+			function Dropdown:Remove(iv)
 				if not Dropdown.Options[iv] then
 					return
 				end
 				Dropdown.Options[iv].Button:Clean()
 				Dropdown.Options[iv] = nil
 			end
-			function Dropdown:Refresh(self, List)
+			function Dropdown:Refresh(List)
 				for Index, Value in Dropdown.Options do
 					Dropdown:Remove(Value.Name)
 				end
@@ -2624,7 +2624,7 @@ do
 					BackgroundColor3 = l(bit32.bxor(bit32.bxor(255, 1515870810), 1515870810), bit32.bxor(bit32.bxor(255, 1515870810), 1515870810), (141 + 114)),
 				})
 			end
-			function ix:Turn(self, iz)
+			function ix:Turn(iz)
 				ix.Active = iz
 				if ix.Active then
 					iy["\80\97\103\101\67\111\110\116\101\110\116"].Instance.Visible = (not false)
@@ -3469,7 +3469,7 @@ do
 			end
 			local kk = (not not false)
 			local kl
-			function jc:SetOpen(self, km)
+			function jc:SetOpen(km)
 				if kk then
 					return
 				end
@@ -3532,7 +3532,7 @@ do
 					end
 				end
 			end
-			function jc:Update(self, ks, kt)
+			function jc:Update(ks, kt)
 				local Hue, Saturation, Value = jc.Hue, jc.Saturation, jc.Value
 				jc.Color = m(Hue, Saturation, Value)
 				jc.HexValue = jc.Color:ToHex()
@@ -3572,7 +3572,7 @@ do
 					a:SafeCall(jb.Callback, jc.Color, jc.Alpha)
 				end
 			end
-			function jc:Set(self, lb, Alpha)
+			function jc:Set(lb, Alpha)
 				if type(lb) == "\116\97\98\108\101" then
 					lb = l(lb[1], lb[(-465 + 467)], lb[bit32.bxor(bit32.bxor(3, 1515870810), 1515870810)])
 					Alpha = lb[bit32.bxor(bit32.bxor(4, 1515870810), 1515870810)]
@@ -3601,7 +3601,7 @@ do
 			end)
 			local lg = (1 == 0)
 			local lh
-			function jc:SlidePalette(self, Input)
+			function jc:SlidePalette(Input)
 				if not Input or not lg then
 					return
 				end
@@ -3618,7 +3618,7 @@ do
 			end
 			local lm = (not true)
 			local ln
-			function jc:SlideHue(self, Input)
+			function jc:SlideHue(Input)
 				if not Input or not lm then
 					return
 				end
@@ -3632,7 +3632,7 @@ do
 			end
 			local lq = (not not false)
 			local lr
-			function jc:SlideAlpha(self, Input)
+			function jc:SlideAlpha(Input)
 				if not Input or not lq then
 					return
 				end
@@ -3863,10 +3863,10 @@ do
 					lw:SetStatus(lv.Toggled)
 				end
 			end
-			function lv:Get(self)
+			function lv:Get()
 				return lv.Key, lv.Mode, lv.Toggled
 			end
-			function lv:Set(self, ma)
+			function lv:Set(ma)
 				if ag(tostring(ma), "\69\110\117\109") then
 					lv.Key = tostring(ma)
 					ma = ma.Name == "\66\97\99\107\115\112\97\99\101" and "\78\111\110\101" or ma.Name
@@ -3918,7 +3918,7 @@ do
 			end
 			local mg = (not true)
 			local mh
-			function lv:SetOpen(self, mi)
+			function lv:SetOpen(mi)
 				if mg then
 					return
 				end
@@ -3972,7 +3972,7 @@ do
 					lx["\75\101\121\98\105\110\100\87\105\110\100\111\119"].Instance.Parent = not lv.IsOpen and a.UnusedHolder.Instance or a.Holder.Instance
 				end)
 			end
-			function lv:SetMode(self, mn)
+			function lv:SetMode(mn)
 				for mo, Value in ly do
 					if mo == mn then
 						Value:Tween(nil, {
@@ -3994,7 +3994,7 @@ do
 				end
 				lz()
 			end
-			function lv:Press(self, mp)
+			function lv:Press(mp)
 				if lv.Mode == "\84\111\103\103\108\101" then
 					lv.Toggled = not lv.Toggled
 				elseif lv.Mode == "\72\111\108\100" then
@@ -4219,13 +4219,13 @@ do
 					PaddingRight = t(0, bit32.bxor(bit32.bxor(8, 1515870810), 1515870810)),
 				})
 			end
-			function Textbox:Get(self)
+			function Textbox:Get()
 				return Textbox.Value
 			end
-			function Textbox:SetVisibility(self, mu)
+			function Textbox:SetVisibility(mu)
 				mt["\84\101\120\116\98\111\120"].Instance.Visible = mu
 			end
-			function Textbox:Set(self, Value)
+			function Textbox:Set(Value)
 				if ms.Numeric then
 					if (not tonumber(Value)) and aj(tostring(Value)) > 0 then
 						Value = Textbox.Value
@@ -4420,13 +4420,13 @@ do
 					PaddingLeft = t(0, bit32.bxor(bit32.bxor(5, 1515870810), 1515870810)),
 				})
 			end
-			function Dropdown:Get(self)
+			function Dropdown:Get()
 				return Dropdown.Value
 			end
-			function Dropdown:SetVisibility(self, my)
+			function Dropdown:SetVisibility(my)
 				mx["\76\105\115\116\98\111\120"].Instance.Visible = my
 			end
-			function Dropdown:Set(self, mz)
+			function Dropdown:Set(mz)
 				if mw.Multi then
 					if type(mz) ~= "\116\97\98\108\101" then
 						return
@@ -4462,7 +4462,7 @@ do
 					a:SafeCall(mw.Callback, Dropdown.Value)
 				end
 			end
-			function Dropdown:Add(self, nc)
+			function Dropdown:Add(nc)
 				local nd = bl:Create("\84\101\120\116\66\117\116\116\111\110", {
 					Parent = mx["\76\105\115\116"].Instance,
 					Name = "\0",
@@ -4488,7 +4488,7 @@ do
 					Name = nc,
 					Selected = (1 == 0),
 				}
-				function ne:Toggle(self, Status)
+				function ne:Toggle(Status)
 					if Status == "\65\99\116\105\118\101" then
 						ne.Button:ChangeItemTheme({
 							TextColor3 = "\65\99\99\101\110\116",
@@ -4505,7 +4505,7 @@ do
 						})
 					end
 				end
-				function ne:Set(self)
+				function ne:Set()
 					ne.Selected = not ne.Selected
 					if mw.Multi then
 						local nf = aa(Dropdown.Value, ne.Name)
@@ -4545,14 +4545,14 @@ do
 				Dropdown.Options[ne.Name] = ne
 				return ne
 			end
-			function Dropdown:Remove(self, ng)
+			function Dropdown:Remove(ng)
 				if not Dropdown.Options[ng] then
 					return
 				end
 				Dropdown.Options[ng].Button:Clean()
 				Dropdown.Options[ng] = nil
 			end
-			function Dropdown:Refresh(self, List)
+			function Dropdown:Refresh(List)
 				for Index, Value in Dropdown.Options do
 					Dropdown:Remove(Value.Name)
 				end
@@ -4680,10 +4680,10 @@ do
 				BackgroundColor3 = "\65\99\99\101\110\116",
 			})
 		end
-		function Watermark:SetVisibility(self, nj)
+		function Watermark:SetVisibility(nj)
 			ni["\87\97\116\101\114\109\97\114\107"].Instance.Visible = nj
 		end
-		function Watermark:SetText(self, Text)
+		function Watermark:SetText(Text)
 			ni["\84\101\120\116"].Instance.Text = Text
 		end
 		return Watermark
@@ -4775,7 +4775,7 @@ do
 				SortOrder = Enum.SortOrder.LayoutOrder,
 			})
 		end
-		function KeybindList:Add(self, nl, Name, nm)
+		function KeybindList:Add(nl, Name, nm)
 			local nn = bl:Create("\84\101\120\116\76\97\98\101\108", {
 				Parent = nk["\67\111\110\116\101\110\116"].Instance,
 				Name = "\0",
@@ -4796,10 +4796,10 @@ do
 				TextColor3 = "\84\101\120\116",
 			})
 			nn:TextBorder()
-			function nn:SetText(self, no, Name, np)
+			function nn:SetText(no, Name, np)
 				nn.Instance.Text = "" .. no .. "\32\45\32" .. Name .. "\32\40" .. np .. ")"
 			end
-			function nn:SetStatus(self, nq)
+			function nn:SetStatus(nq)
 				if nq then
 					nn.Instance.Visible = (1 == 1)
 					nn:Tween(nil, {
@@ -4815,7 +4815,7 @@ do
 			end
 			return nn
 		end
-		function KeybindList:SetVisibility(self, nr)
+		function KeybindList:SetVisibility(nr)
 			nk["\75\101\121\98\105\110\100\76\105\115\116"].Instance.Visible = nr
 		end
 		nk["\75\101\121\98\105\110\100\76\105\115\116"].Instance.Visible = (not not false)
@@ -5120,12 +5120,12 @@ do
 				BackgroundColor3 = "\65\99\99\101\110\116",
 			})
 		end
-		function nx:SetStatus(self, nz)
+		function nx:SetStatus(nz)
 			if ny["\83\116\97\116\117\115"] and ny["\83\116\97\116\117\115"].Instance then
 				ny["\83\116\97\116\117\115"].Instance.Text = nz
 			end
 		end
-		function nx:SetProgress(self, oa)
+		function nx:SetProgress(oa)
 			oa = v(oa, 0, 1)
 			nx.Progress = oa
 			if ny["\66\97\114\70\105\108\108"] and ny["\66\97\114\70\105\108\108"].Instance then
@@ -5137,7 +5137,7 @@ do
 				ny["\80\101\114\99\101\110\116"].Instance.Text = w(oa * (588 - 488)) .. "%"
 			end
 		end
-		function nx:Dismiss(self)
+		function nx:Dismiss()
 			if not nx.IsOpen then
 				return
 			end
@@ -5413,17 +5413,17 @@ do
 			od["\77\111\117\115\101\66\97\99\107\103\114\111\117\110\100"].Instance.Position = s(0, of.X - 1, 0, of.Y - (-478 + 534))
 		end)
 		local og = {}
-		function Window:AddToOldSizes(self, oh, oi)
+		function Window:AddToOldSizes(oh, oi)
 			if not og[oh] then
 				og[oh] = oi
 			end
 		end
-		function Window:GetOldSize(self, oj)
+		function Window:GetOldSize(oj)
 			if og[oj] then
 				return og[oj]
 			end
 		end
-		function Window:SetOpen(self, ok)
+		function Window:SetOpen(ok)
 			if oe then
 				return
 			end
@@ -5752,7 +5752,7 @@ do
 		pd["\68\114\111\112\100\111\119\110"].Instance.AnchorPoint = u(1, 1)
 		pd["\68\114\111\112\100\111\119\110"].Instance.Position = s(1, -(-729 + 737), 1, -bit32.bxor(bit32.bxor(25, 1515870810), 1515870810))
 		pd["\68\114\111\112\100\111\119\110"].Instance.Size = s(0, (-349 + 549), 0, (166 - 126))
-		function Playerlist:Add(self, pe)
+		function Playerlist:Add(pe)
 			local pf = {}
 			pf["\78\101\119\80\108\97\121\101\114"] = bl:Create("\84\101\120\116\66\117\116\116\111\110", {
 				Parent = pc["\80\108\97\121\101\114\72\111\108\100\101\114"].Instance,
@@ -5846,7 +5846,7 @@ do
 				PlayerStatus = pf["\83\116\97\116\117\115"],
 				Player = pe,
 			}
-			function ph:Toggle(self, Status)
+			function ph:Toggle(Status)
 				if Status == "\65\99\116\105\118\101" then
 					pf["\78\97\109\101"]:ChangeItemTheme({
 						TextColor3 = "\65\99\99\101\110\116",
@@ -5863,7 +5863,7 @@ do
 					})
 				end
 			end
-			function ph:Set(self)
+			function ph:Set()
 				ph.Selected = not ph.Selected
 				if ph.Selected then
 					Playerlist.Player = ph.Player
@@ -5895,7 +5895,7 @@ do
 			Playerlist.Players[pe.Name] = ph
 			return ph
 		end
-		function Playerlist:Remove(self, Name)
+		function Playerlist:Remove(Name)
 			if Playerlist.Players[Name] then
 				Playerlist.Players[Name].PlayerButton:Clean()
 			end
@@ -6039,7 +6039,7 @@ do
 			Page = Toggle.Page,
 			Callback = Toggle.Callback,
 		})
-		function pp:Colorpicker(self, pr)
+		function pp:Colorpicker(pr)
 			local ps = {
 				Window = self.Window,
 				Page = self.Page,
@@ -6062,7 +6062,7 @@ do
 			})
 			return pt
 		end
-		function pp:Keybind(self, pu)
+		function pp:Keybind(pu)
 			pu = pu or {}
 			local pv = {
 				Window = self.Window,
@@ -6203,7 +6203,7 @@ do
 				Description = Tooltip.Description,
 			})
 		end
-		function ql:Colorpicker(self, qn)
+		function ql:Colorpicker(qn)
 			qn = qn or {}
 			local qo = {
 				Window = self.Window,
@@ -6227,7 +6227,7 @@ do
 			})
 			return qp
 		end
-		function ql:Keybind(self, qq)
+		function ql:Keybind(qq)
 			qq = qq or {}
 			local qr = {
 				Window = self.Window,
