@@ -1,0 +1,5 @@
+# Build pipeline (obfuscator, transpiler, emulator, node_modules)
+.obf/
+
+# Local deobfuscated / transpiled working copies
+_*.lua
