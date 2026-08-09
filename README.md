@@ -1,6 +1,6 @@
 <div align="center">
 
-# misaki
+# Misaki
 
 **a script hub for Prison Life** — clean, fast, event-driven.
 
